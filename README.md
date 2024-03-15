@@ -1,0 +1,2 @@
+The practical work aims to create an automatic traffic light system with infrared sensors to detect if a person is waiting at the pedestrian crossing. Subsequently, the traffic light will show the red signal for cars, prioritizing pedestrians only when someone is waiting at the crossing, rather than when it's empty.
+The purpose of such a project is to provide users with the ability to streamline traffic flow in congested cities and prioritize pedestrian safety.
