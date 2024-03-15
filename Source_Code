@@ -1,0 +1,54 @@
+const int pow1=13,pow2=15,red=27,yel=26,green=25,A1_read=34,pieton=32;
+
+void setup() {
+ pinMode(A1_read,INPUT);
+ pinMode(pow1,OUTPUT);
+ pinMode(pow2,OUTPUT);
+ pinMode(red,OUTPUT);
+ pinMode(yel,OUTPUT);
+ pinMode(green,OUTPUT);
+ pinMode(pieton,OUTPUT);
+ Serial.begin(9600);
+}
+void loop() {
+  digitalWrite(pow1,HIGH);
+ digitalWrite(pow2,HIGH);
+ digitalWrite(green,HIGH);
+  int read1=analogRead(A1_read);
+  Serial.println(read1);
+  if(read1<=2000){
+    digitalWrite(green,LOW);
+    delay(1000);
+    digitalWrite(yel,HIGH);
+    delay(2000);
+    digitalWrite(yel,LOW);
+    delay(1000);
+    digitalWrite(red,HIGH);
+    digitalWrite(pieton,HIGH);
+    delay(500);
+    digitalWrite(pieton,LOW);
+    delay(500);
+    digitalWrite(pieton,HIGH);
+    delay(500);
+    digitalWrite(pieton,LOW);
+    delay(500);
+    digitalWrite(pieton,HIGH);
+    delay(500);
+    digitalWrite(pieton,LOW);
+    delay(500);
+    digitalWrite(pieton,HIGH);
+    delay(500);
+    digitalWrite(pieton,LOW);
+    delay(500);
+    digitalWrite(pieton,HIGH);
+    delay(500);
+    digitalWrite(pieton,LOW);
+    delay(500);
+    digitalWrite(pieton,HIGH);
+    delay(500);
+    digitalWrite(pieton,LOW);
+    
+    digitalWrite(red,LOW);
+  }
+  delay(100);
+}
